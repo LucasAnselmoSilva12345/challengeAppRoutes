@@ -6,7 +6,7 @@ import {
   BoxProduct,
   NameProduct,
   DescriptionProduct,
-} from '../styles/cardProduct.js';
+} from './cardProduct.js';
 
 export function CardProduct() {
   const [products, setProducts] = useState(null);
