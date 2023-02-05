@@ -1,6 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import {
+  ContainerCardProduct,
+  BoxProduct,
+  NameProduct,
+  DescriptionProduct,
+} from '../styles/cardProduct.js';
+
 export function CardProduct() {
   const [products, setProducts] = useState(null);
 
@@ -15,14 +22,20 @@ export function CardProduct() {
   }
 
   return (
-    <section>
+    <ContainerCardProduct>
       {products.map((produto) => (
-        <Link to={`produto/${produto.id}`} key={produto.id}>
-          <img src={produto.fotos[0].src} alt={produto.fotos[0].titulo} />
-          <h1>{produto.nome}</h1>
-          <p>{produto.descricao}</p>
-        </Link>
+        <BoxProduct key={produto.id}>
+          <Link to={`product/${produto.id}`}>
+            <img
+              className="mb-2"
+              src={produto.fotos[0].src}
+              alt={produto.fotos[0].titulo}
+            />
+            <NameProduct>{produto.nome}</NameProduct>
+            <DescriptionProduct>{produto.descricao}</DescriptionProduct>
+          </Link>
+        </BoxProduct>
       ))}
-    </section>
+    </ContainerCardProduct>
   );
 }
