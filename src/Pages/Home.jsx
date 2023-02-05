@@ -1,10 +1,13 @@
 import { Head } from '../components/Head';
 
+import { CardProduct } from '../components/CardProduct';
+
 export function Home() {
   return (
-    <>
-      <h1>Challenge App Routes Origamid</h1>
+    <section>
       <Head title="Home" />
-    </>
+
+      <CardProduct />
+    </section>
   );
 }
