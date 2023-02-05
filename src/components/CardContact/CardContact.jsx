@@ -5,7 +5,7 @@ import {
   Title,
   Subtitle,
   SocialNetwork,
-} from '../styles/cardContact.js';
+} from './cardContact.js';
 
 export function CardContact({ title, message, valueRef, titleRef }) {
   return (

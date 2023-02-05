@@ -1,9 +1,9 @@
 import React from 'react';
-import { CardContact } from '../components/CardContact.jsx';
-import { Head } from '../components/Head.jsx';
-import { HeadContact } from '../components/HeadContact.jsx';
+import { CardContact } from '../../components/CardContact/CardContact';
+import { Head } from '../../components/Head.jsx';
+import { HeadContact } from '../../components/HeadContact.jsx';
 
-import { Section, ContainerElements, BoxContact } from '../styles/contact.js';
+import { Section, ContainerElements, BoxContact } from './contact.js';
 
 export function Contact() {
   return (
@@ -13,7 +13,6 @@ export function Contact() {
 
         <BoxContact>
           <CardContact
-            image="https://img.icons8.com/color/256/apple-mail.png"
             title="Email"
             message="Entre em contato comigo via email"
             valueRef="lucasanselmodasilva02@gmail.com"
