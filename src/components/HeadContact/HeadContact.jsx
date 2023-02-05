@@ -4,7 +4,7 @@ import {
   ParagraphHeadContact,
   TitleContact,
   SubtitleContact,
-} from '../styles/headContact.js';
+} from './headContact.js';
 
 export function HeadContact() {
   return (
