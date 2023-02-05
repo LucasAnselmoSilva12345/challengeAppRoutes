@@ -1,5 +1,6 @@
 import React from 'react';
 import { CardContact } from '../components/CardContact.jsx';
+import { Head } from '../components/Head.jsx';
 import { HeadContact } from '../components/HeadContact.jsx';
 
 import { Section, ContainerElements, BoxContact } from '../styles/contact.js';
@@ -48,6 +49,8 @@ export function Contact() {
           />
         </BoxContact>
       </ContainerElements>
+
+      <Head title="Contato" />
     </Section>
   );
 }
