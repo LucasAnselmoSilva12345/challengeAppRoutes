@@ -43,7 +43,7 @@ $ git clone https://github.com/LucasAnselmoSilva12345/challengeAppRoutes
 
 ```sh
 
-$ cd pasta
+$ cd folder
 
 ```
 
