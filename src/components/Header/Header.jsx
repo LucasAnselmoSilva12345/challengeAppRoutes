@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
-import { Nav, ContainerList } from '../styles/header.js';
+import { Nav, ContainerList } from './header.js';
 
 export function Header() {
   return (
@@ -9,7 +9,7 @@ export function Header() {
         <ContainerList>
           <li>
             <NavLink
-              className="bg-violet-500 text-violet-100 py-3 px-4 rounded-lg hover:bg-violet-700 focus:outline-none focus:ring focus:border-violet-700"
+              className="bg-violet-500 text-violet-100 py-3 px-4 rounded-lg hover:bg-violet-700 focus:outline-none focus:ring focus:border-violet-400"
               to="/"
               end
             >
