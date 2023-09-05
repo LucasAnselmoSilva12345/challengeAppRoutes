@@ -1,6 +1,6 @@
 import React from 'react';
 import { CardContact } from '../../components/CardContact/CardContact';
-import { Head } from '../../components/Head.jsx';
+import { Head } from '../../components/Head.js';
 import { HeadContact } from '../../components/HeadContact/HeadContact';
 
 import { Section, ContainerElements, BoxContact } from './contact.js';
